@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>ToDo List</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <section id="home-container">
+            <div id="action">
+                <input type="text" id="titulo" placeholder="Digite uma tarefa">
+                <button type="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+            </div>
+
+            <div id="search">
+                <input type="number" id="searchId" placeholder="Digite o ID da tarefa">
+                <button type="button" onclick="buscarTarefaPorId()">Buscar Tarefa</button>
+            </div>
+            <div id="tarefaEncontrada"></div>
+        </section>
+
+        <section id="dinamic">
+            <h2>Tarefas</h2>
+            <ul id="tarefas"></ul>
+        </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

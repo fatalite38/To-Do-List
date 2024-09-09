@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #252323;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+main, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1, h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+#action, #search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    flex: 1;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #555;
+    color: white;
+}
+
+button:hover {
+    background-color: #15c0c0df;
+    cursor: pointer;
+}
+.tarefa-botoes button:hover {
+    background-color: #15c0c0df;
+}
+
+#tarefaEncontrada {
+    margin-top: 1rem;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+}
+
+.tarefa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.tarefa-info {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.tarefa-botoes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tarefa-botoes button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #555;
+    color: white;
+}
+
+.pendente {
+    color: rgba(252, 252, 4, 0.872);
+}
+
+.concluida {
+    color: rgb(3, 216, 3);
+}
+
+@media (max-width: 600px) {
+    .tarefa-botoes {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
